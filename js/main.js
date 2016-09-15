@@ -3,9 +3,8 @@ function validateForm(){
 	var lastname = document.getElementById("lastname").value;
 	var inputEmail = document.getElementById("input-email").value;
 	var inputPassword = document.getElementById("input-password").value;
-	var formControl = document.querySelector("select.form-control").value;
 
-	if(name.length == 0 && lastname.length == 0 && inputEmail.length == 0 && inputPassword.length == 0)
+	if(name.length == 0 && lastname.length == 0 && inputEmail.length == 0 && inputPassword.length == 0 && document.querySelector("select").value == 0)
 		alert("Ingrese los campos")
 	else{
 		//Email
